@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adoleshenca</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f8ff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #4caf50;
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+    }
+    nav {
+      background: #333;
+      padding: 0.5rem;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 2rem;
+    }
+    article {
+      background: white;
+      margin-bottom: 1.5rem;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-top: 1rem;
+    }
+    button {
+      background: #4caf50;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    button: hover {
+      background: #45a049;
+    }
+    #motivim {
+      margin-top: 1rem;
+      font-style: italic;
+      color: #333;
+    }
+    footer {
+      background: #4caf50;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Adoleshenca – Sfida dhe Mundësi</h1>
+    <p>Një udhëtim i bukur drejt rritjes</p>
+  </header>
+
+  <nav>
+    <a href="#sfida">Sfida</a>
+    <a href="#keshilla">Këshilla</a>
+    <a href="#inspirim">Inspirim</a>
+  </nav>
+
+  <section id="sfida">
+    <article>
+      <h2>Sfida të zakonshme</h2>
+      <p>Adoleshenca është periudha kur ndryshimet fizike, emocionale dhe sociale ndihen më fort. 
+      Shumë të rinj përballen me presionin e shoqërisë, dilema mbi identitetin dhe vendime të rëndësishme për të ardhmen.</p>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Teenagers.jpg" alt="Adoleshentë duke biseduar">
+    </article>
+  </section>
+
+  <section id="keshilla">
+    <article>
+      <h2>Këshilla për adoleshentët</h2>
+      <ul>
+        <li>Ruaj balancën mes shkollës dhe kohës së lirë.</li>
+        <li>Bisedo hapur me prindërit ose miqtë e besuar.</li>
+        <li>Investo në hobi që të bëjnë të lumtur.</li>
+      </ul>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/9e/Teenagers_playing_basketball.jpg" alt="Adoleshentë duke luajtur basketboll">
+    </article>
+  </section>
+
+  <section id="inspirim">
+    <article>
+      <h2>Inspirim</h2>
+      <p>Adoleshenca është një mundësi për të zbuluar pasionet e tua dhe për të ndërtuar bazat e së ardhmes.</p>
+      <button onclick="shfaqMesazh()">Kliko për motivim</button>
+      <div id="motivim"></div>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Teenagers_smiling.jpg" alt="Adoleshentë të lumtur">
+    </article>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Faqja për Adoleshencën</p>
+  </footer>
+
+  <script>
+    function shfaqMesazh() {
+      const mesazhe = [
+        "Ti je më i fortë se sa mendon!",
+        "Çdo sfidë është një mundësi për rritje.",
+        "Beso tek vetja dhe mos u dorëzo.",
+        "E ardhmja është në duart e tua."
+      ];
+      const randomIndex = Math.floor(Math.random() * mesazhe.length);
+      document.getElementById("motivim").innerText = mesazhe[randomIndex];
+    }
+  </script>
+</body>
+</html>
